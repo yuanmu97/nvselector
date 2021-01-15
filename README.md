@@ -10,10 +10,10 @@ python setup.py install
 ## Usage
 
 ```python
-from nvselector import autoset_gpu
+from nvselector import autoset_nvgpu
 
 # select 1 gpu with minimal memory utilization rate
-autoset_gpu(metric="mem", k=1)
+autoset_nvgpu(metric="mem", k=1)
 
 # your GPU codes
 # ...
