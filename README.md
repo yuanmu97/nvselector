@@ -18,7 +18,12 @@ pip install nvselector --index-url https://pypi.org/simple/
 ```python
 from nvselector import autoset_nvgpu
 
-# select 1 gpu with minimal memory utilization rate
+# supported metrics: 
+#   "mem": memory allocation rate
+#   "util": GPU utilization rate
+# k (int): the num. of selected GPUs
+
+# select 1 gpu with minimal memory allocation rate
 autoset_nvgpu(metric="mem", k=1)
 
 # your GPU codes
